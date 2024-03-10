@@ -14,11 +14,12 @@ module.exports = (bot) => {
     // Construct the message
     const message = `
     Available commands:
-    /ai - AI command description
-    /lyrics - Lyrics command description
-    /shoti - Shoti command description
+    /ai - no prefix
+    /lyrics - Lyrics searc
+    /shoti - Shoti girls
+    /announcement - owner use Or Admins 
     
-    This Bot Has Been Uptimed For About: ${formattedUptime}
+     Uptimed For About✨: ${formattedUptime}
     `;
     
     // Send the message
