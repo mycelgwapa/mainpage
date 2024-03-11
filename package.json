@@ -5,11 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "npm update && nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Agustin Quirante",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mycelgwapa/mainpage/tree/nodejs"
+  },
   "dependencies": {
     "@giphy/js-fetch-api": "^5.4.0",
     "@giphy/react-components": "^9.3.0",

@@ -19,7 +19,7 @@ module.exports = (bot) => {
         }
 
         // Send the initial prompt message
-        bot.sendMessage(chatId, 'Please type the announcement message:');
+        bot.sendMessage(chatId, '| From the owner or the admin\n━━━━━━━━━━━━━━━━━━━\n   ANNOUNCEMENT 🚨⚠️\n━━━━━━━━━━━━━━━━━━━\nPlease type the announcement message:');
 
         // Listen for the user's reply
         bot.once('message', async (reply) => {
@@ -30,18 +30,13 @@ module.exports = (bot) => {
             const userName = msg.from.first_name; // You can customize this to include last name if available
 
             // Construct the styled announcement message
-            const announcementHeader = 'ANNOUNCEMENT!!!';
-            const announcementFooter = `Announced by: ${userName}`;
-
-            // Include owner or admin identification
-            const userType = isOwner ? 'Owner' : 'Admin';
-
             const styledAnnouncement = `
-${announcementHeader}
-____________________
+| From the owner or the admin
+━━━━━━━━━━━━━━━━━━━
+   ANNOUNCEMENT 🚨⚠️
+━━━━━━━━━━━━━━━━━━━
 ${announcementMsg}
-____________________
-${userType}: ${userName}
+》━━━━━━━━━━━━━━━━━━━《
 `;
 
             // Send the styled announcement message to the group
